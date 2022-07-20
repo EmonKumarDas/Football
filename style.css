@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+section{
+    margin-top: 60px;
+}
+.header{
+    border-radius: 20px;
+    background-color: #161616;
+    color: white;
+}
+.header-blog{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+}
+.header-left-blog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;    
+}
+
+.header-left-blog h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 3vw;
+    line-height: 1;
+    text-align: center;
+}
+
+button > a{
+    text-decoration: none;
+    color: white;
+}
+
+button{
+    background-color: #DD0000;
+    width: 187px;
+    height: 50px;
+    padding: 10px 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+}
+
+.header-right-blog img{
+width: 90%;
+}
+
+.Transfer-container{
+   display: flex;
+    gap: 20px;
+}
+
+.match-schedule{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #161616;
+    height: 300px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.match-schedule h2{
+    color: black;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.schedule{
+    padding: 20px;
+    font-size: 0.6rem;
+    width: 85%;
+    border-radius: 15px;
+}
+
+.match-schedule>.Upcoming-Match{
+    background-color: white;
+    margin-top: 5px;
+}
+.match-schedule>.Upcoming-Match:hover{
+    background-color: #DD0000;
+    
+}
+
+.match-schedule>.All-Group{
+    background-color: white;
+    margin-top: 5px;
+}
+.match-schedule>.All-Group:hover{
+    background-color: #DD0000;
+    
+}
+.match-schedule>.Blog{
+    background-color: #DD0000;
+    margin-top: 5px;
+    
+}
+.Blog h2{
+    color: white;
+}
+.Transfer-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    
+}
+.Transfer-card{
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.card-Title a{
+    border: 1px solid gray;
+    padding: 10px 20px;
+    color: black;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.card-Title{
+    margin-top: 20px;
+    padding: 10px;
+}
+.card-Title h4{
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+.watch-time{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+footer{
+    width: 100%;
+    background-color: #161616;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 40px;
+}
+.footer > h1{
+    color: white;
+}
+.footer ul li{
+    list-style-type: none;
+}
+hr{
+    width: 90%;
+    margin-top: 20px;
+}
+.footer-items{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+ul a{
+    color: white;
+}
+.social-icons{
+ display: flex;
+ justify-content: center;
+ gap: 30px;
+}
+.social-icons i{
+color: white;
+padding-bottom: 20px;
+}
+
+
+/* ----------------------------
+Upcoming Match styles start
+------------------------------*/
+    .Transfer-card>.flag{
+        width: 50%; 
+    }
+
+    .flag-img{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 10px;
+    }
+
+    .flag-img>h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .Team-name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+    line-height: 30px;
+    }
+
+ /* ----------------------------
+Upcoming Match styles end
+------------------------------*/
+
+    /* --*********************************
+               Responsive styles
+    *********************************--*/
+@media screen and (min-width:1255px){
+    .view-button{
+        display: none;
+    }
+}
+@media screen and (max-width: 1254px) {
+    .match-schedule{
+        background-color: white;
+ 
+    }
+    section{
+        margin-top: 30px;
+    }
+    .schedule{
+        border: 1px solid black;
+    }
+    .Transfer-container{
+        display: grid;
+        grid-template-columns: (1,1fe);
+    }
+    .Transfer-section{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .Transfer-img{
+        width: 100%;
+    }
+    .hide{
+        display: none;
+    }
+    .view-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-items{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+        margin-top: 20px;
+        justify-items: center;
+    }
+ 
+}
+
+@media screen and (max-width: 450px) {
+    .header-blog{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .header-left-blog{
+        align-items: center;
+    }
+    .header-left-blog>button{
+        margin-right: 16vw;
+    }
+    .header-left-blog h1{
+    font-size: 8vw;
+    text-align: center;
+    margin-top: 50px;
+    line-height: 40px;
+    margin-right: 7vw;
+    }
+
+    .header-left-blog p{
+        font-size: 5vw;
+        text-align: justify;
+        width: 300px;
+        margin-right: 7vw;
+
+    }
+    .header-right-blog img{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .match-schedule{
+        background-color: white;
+    }
+    section{
+        margin-top: 20px;
+    }
+    .schedule{
+        border: 1px solid black;
+    }
+    .Transfer-container{
+        display: grid;
+        grid-template-columns: (1,1fe);
+    }
+    .Transfer-section{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .Transfer-img{
+        width: 100%;
+    }
+    .hide{
+        display: none;
+    }
+    .view-button{
+        display: none;
+    }
+    .footer-items{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+        justify-items: center;
+        margin-top: 20px;
+    }
+}
+@media screen and (min-width: 451px) and (max-width: 1000px) {
+    .match-schedule{
+        background-color: white;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        height: 100px;
+    }
+    section{
+        margin-top: 30px;
+    }
+    .schedule{
+        border: 1px solid black;
+    }
+    .Transfer-img{
+        width: 100%;
+    }
+    .Transfer-section{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .view-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
